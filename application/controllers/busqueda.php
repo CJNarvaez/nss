@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * @author Cristhian Narvaez
@@ -36,4 +37,5 @@ class Busqueda extends CI_Controller
     }
 }
 
-?>
+/* End of file busqueda.php */
+/* Location: ./application/controllers/busqueda.php */

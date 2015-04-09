@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * @author Cristhian Narvaez
@@ -85,8 +86,9 @@ class Md_busqueda extends CI_Model
             return $this->table->generate();
         }
         else
-            return heading("<strong>TU BUSQUEDA TIENE DEMASIADOS RESULTADOS, POR FAVOR SE MAS ESPECIFICO</strong>".br().img('/img/hamster.jpg'),3,'class="text-center"');
+            return heading("<strong>TU BUSQUEDA TIENE DEMASIADOS RESULTADOS, POR FAVOR SE MAS ESPECIFICO</strong>",3,'class="text-center"');
     }    
 }
 
-?>
+/* End of file md_busqueda.php */
+/* Location: ./application/models/md_busqueda.php */

@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
  * @author Cristhian Narvaez
@@ -7,8 +8,11 @@
 
 class Principal extends CI_Controller 
 {
-    //FUNCION DEFAULT
-    function index()
+    /**
+     * Funcion por default
+     * @return none
+     */
+    public function index()
     {
         $this->load->library('ion_auth');
         $this->load->helpers(array('form','html'));
@@ -24,4 +28,5 @@ class Principal extends CI_Controller
         }
     }    
 }
-?>
+/* End of file principal.php */
+/* Location: ./application/controllers/principal.php */
